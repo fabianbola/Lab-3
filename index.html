@@ -20,17 +20,40 @@
             border-color: red;
         }
 
+        .headerima{
+            position: relative; /* To order the page */
+            float:left; /* To order the page on one specific side*/
+            width: 1300px;
+            height: 250px;
+        }
+
+        .headertit{
+            position: relative; /* To order the page */
+            float: right; /* To order the page on one specific side*/
+            top: -250px;
+            right: 50px;
+            color: aliceblue;
+            font-size: 50px;
+        }
+
         .navbar {
             display: flex;
-            background-color: blue;
+            background-color: rgba(0, 0, 255, 0.728);
+            width: 1300px;
+            position: relative; /* To order the page */
+            float: left; /* To order the page on one specific side*/
+            top: -125px;
         }
 
         .nav-list {
-            display: flex; /* to create a list horizontal  */
-            list-style: none; /* To delate the boulets */
+            list-style-type: none;/* To delate the boulets */
+            margin: 20px;
+            padding: 0;
+            
         }
 
         .nav-list li {
+            display: inline; /* to create a list horizontal  */
             margin-right: 20px; /* To separate the options in the list*/
         }
 
@@ -40,32 +63,65 @@
             font-size: 18px;
         }
 
-        .nav-list li:last-child {
-            margin-right: 0;
+        .nav-list li a:hover { /* To change the color on hover on the link text */
+            color: black;
+            background-color: #ffd700;
         }
+
+        .bodyima1{
+            position: relative; /* To order the page */
+            float:left; /* To order the page on one specific side*/
+            width: 300px;
+            bottom: 100px;
+        }
+
+        .bodytit{
+            position: relative; /* To order the page */
+            float: left; /* To order the page on one specific side*/
+            bottom: 117px;
+            left: 10px;
+        }
+
+        .bodytex{
+            position: relative; /* To order the page */
+            float: left; /* To order the page on one specific side*/
+            bottom: 40px;
+             left: -380px;
+        }
+
     </style>
 </head>
 <body>
     <header>
-        <h1>Pacific trails resort</h1>
+        <div >
+            <img src="Header resorts.jpeg" alt="Header resort image" class="headerima">
+        </div>
+        <h1 class="headertit">Pacific trails resort</h1>
     </header>
     <nav class="navbar">
         <ul class="nav-list">
             <li><a href="Yurts.html">Yurts</a></li>
             <li><a href="Activities.html">Activities</a></li>
             <li><a href="Reservation.html">Reservation</a></li>
-
         </ul>
     </nav>
     <main>
         <div>
-            <h2>hola</h2>
+            <img src="Body Couple.jpg" alt="Body couple image"; class="bodyima1">
         </div>
-        <div>
-            <p>como estas</p>
+        <div class="bodytit">
+            <h2>All inclusive vacations in Quebec</h2>
+         <h5>Discover Quebec's natural wonders during the four seasons</h5>
         </div>
-        <div>
-            <p>bien y tu?</p>
+        <div class="bodytex">
+            <ul>
+                <li>Stunning waterfront views on the St Lawrence river</li>
+                <li>A large choice of runs and hiking trails for all levels</li>
+                <li>The greatest vertical drop East of the Rockies</li>
+                <li>The country’s largest annual snowfall: 6.5m (21.3 ft)</li>
+                <li>An exceptional 4.6 miles-long sled run in winter</li>
+                <li>16.7 miles of biking trails to discover in summer</li>
+            </ul>
         </div>
     </main>
     <footer>
