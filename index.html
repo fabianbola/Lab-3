@@ -3,12 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel el campo</title>
+    <title>Pacific trails resort</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:medium;
+        }
+        div {
+            border-style: solid;
+            border-width: 1.2px;
+            border-color: grey;
+        }
+        footer {
+            border-style: solid;
+            border-width: 1.2px;
+            border-color: red;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: blue;
+        }
+
+        .nav-list {
+            display: flex; /* to create a list horizontal  */
+            list-style: none; /* To delate the boulets */
+        }
+
+        .nav-list li {
+            margin-right: 20px; /* To separate the options in the list*/
+        }
+
+        .nav-list li a {
+            text-decoration: none; /* To delate the undercore in the link*/
+            color: white; /* To change de color of the letter in the link*/
+            font-size: 18px;
+        }
+
+        .nav-list li:last-child {
+            margin-right: 0;
+        }
+    </style>
 </head>
 <body>
-    <header>   
-        <h1>Hola mundo</h1>
+    <header>
+        <h1>Pacific trails resort</h1>
     </header>
-    
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="Yurts.html">Yurts</a></li>
+            <li><a href="Activities.html">Activities</a></li>
+            <li><a href="Reservation.html">Reservation</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>hola</h2>
+        </div>
+        <div>
+            <p>como estas</p>
+        </div>
+        <div>
+            <p>bien y tu?</p>
+        </div>
+    </main>
+    <footer>
+        <p style="font-size: small;">Aqui va la propiedad intelectual</p>
+    </footer>
 </body>
 </html>
